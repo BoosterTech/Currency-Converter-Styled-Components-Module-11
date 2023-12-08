@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import "./style.css";
+import { Wrapper } from "./styled";
 
 const clockFormat = (date) =>
   date.toLocaleString(undefined, {
@@ -11,7 +11,7 @@ const clockFormat = (date) =>
     minute: "2-digit",
     second: "2-digit",
   });
-  
+
 export const Clock = () => {
   const [date, setDate] = useState(new Date());
 
@@ -25,8 +25,5 @@ export const Clock = () => {
     };
   }, []);
 
-  return <div className="date">
-    Today is 
-    {" "}
-    {clockFormat(date)}</div>;
+  return <Wrapper>Today is {clockFormat(date)}</Wrapper>;
 };

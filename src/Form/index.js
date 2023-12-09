@@ -3,6 +3,14 @@ import { currencies } from "../currencies";
 import "./style.css";
 import { Result } from "../Result";
 import { Clock } from "./Date";
+import {
+  Field,
+  Header,
+  Info,
+  SubmitButton,
+  Wrapper,
+  WrapperButton,
+} from "./styled";
 
 const Form = () => {
   const [currency, setCurrency] = useState(currencies[0].abbreviation);
@@ -28,17 +36,16 @@ const Form = () => {
   };
 
   return (
-    <form className="form" onSubmit={onSubmit}>
+    <form onSubmit={onSubmit}>
       <Clock />
-      <h1 className="form__header">CURRENCY CONVERTER</h1>
-      <div className="container">
+      <Header>CURRENCY CONVERTER</Header>
+      <Wrapper>
         <p>
           <label>
             Amount:{" "}
-            <input
+            <Field
               type="number"
               min=".01"
-              className="container__amountElement"
               step="0.01"
               placeholder="enter amount in PLN*"
               value={amount}
@@ -50,9 +57,9 @@ const Form = () => {
         <p>
           <label>
             Currency:
-            <select
+            <Field
+              as="select"
               name="Currency"
-              className="container__currencyElement"
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
             >
@@ -64,25 +71,23 @@ const Form = () => {
                   {currency.name}
                 </option>
               ))}
-            </select>
+            </Field>
           </label>
         </p>
-      </div>
+      </Wrapper>
 
       <div>
         <Result result={result} />
       </div>
 
-      <div className="calculateButton">
-        <button type="submit" className="form__submitButton">
-          CALCULATE
-        </button>
-      </div>
+      <WrapperButton>
+        <SubmitButton type="submit">CALCULATE</SubmitButton>
+      </WrapperButton>
 
-      <p className="form__info">
+      <Info>
         Currency rates taken from <strong>Google Finance</strong> website on
         19.08.2023
-      </p>
+      </Info>
     </form>
   );
 };

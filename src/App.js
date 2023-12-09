@@ -1,12 +1,11 @@
-import "./App.css";
 import Form from "./Form";
-
+import { Wrapper } from "./styled";
 
 function App() {
   return (
-    <div className="App">
+    <Wrapper>
       <Form />
-    </div>
+    </Wrapper>
   );
 }
 

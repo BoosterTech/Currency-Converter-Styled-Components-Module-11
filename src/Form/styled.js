@@ -7,7 +7,7 @@ export const FormField = styled.form`
   background-color: ${({ theme }) => theme.color.Negroni};
   padding: 15px;
 
-  @media (max-width<600px) {
+  @media (max-width<${({ theme }) => theme.breakpoint.mobile}px) {
     width: 600px;
   }
 `;

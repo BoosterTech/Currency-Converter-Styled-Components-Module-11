@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
-import "./style.css";
 import { Result } from "../Result";
 import { Clock } from "./Date";
 import {
   Field,
+  FormField,
   Header,
   Info,
   SubmitButton,
@@ -36,7 +36,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <FormField onSubmit={onSubmit}>
       <Clock />
       <Header>CURRENCY CONVERTER</Header>
       <Wrapper>
@@ -88,7 +88,7 @@ const Form = () => {
         Currency rates taken from <strong>Google Finance</strong> website on
         19.08.2023
       </Info>
-    </form>
+    </FormField>
   );
 };
 

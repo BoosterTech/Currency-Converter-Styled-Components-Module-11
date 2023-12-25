@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "../Result";
-import { Clock } from "./Date";
+import { Clock } from "./Clock";
 import {
   Field,
   FormField,

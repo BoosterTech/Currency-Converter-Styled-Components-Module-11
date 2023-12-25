@@ -4,6 +4,7 @@
 - HTML, CSS, JavaScript (including "ECMAScript 6" features)
 - BEM
 - React
+- Styled Components
   
 ### Demo:
 https://boostertech.github.io/currency-calculator-React/

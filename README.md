@@ -16,6 +16,9 @@ https://boostertech.github.io/currency-calculator-React/
   <img src="https://www.linkpicture.com/q/Animation.gif" width="700"
 <p>
 
+
+![Screenshoo_of_app](public/Screenshot_Readme.png)
+
 ## Available Scripts
 
 In the project directory, you can run:

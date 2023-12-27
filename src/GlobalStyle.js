@@ -25,4 +25,4 @@ body{
   background-position: center;
   background-size: cover; 
   min-height: 100vh; 
-}`
+}`;

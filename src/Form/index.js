@@ -4,6 +4,7 @@ import { Result } from "../Result";
 import { Clock } from "./Clock";
 import {
   Field,
+  Label,
   FormField,
   Header,
   Info,
@@ -40,40 +41,32 @@ const Form = () => {
       <Clock />
       <Header>CURRENCY CONVERTER</Header>
       <Wrapper>
-        <p>
-          <label>
-            Amount:{" "}
-            <Field
-              type="number"
-              min=".01"
-              step="0.01"
-              placeholder="enter amount in PLN*"
-              value={amount}
-              onChange={({ target }) => setAmount(target.value)}
-              required
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Currency:
-            <Field
-              as="select"
-              name="Currency"
-              value={currency}
-              onChange={({ target }) => setCurrency(target.value)}
-            >
-              {currencies.map((currency) => (
-                <option
-                  key={currency.abbreviation}
-                  value={currency.abbreviation}
-                >
-                  {currency.name}
-                </option>
-              ))}
-            </Field>
-          </label>
-        </p>
+        <Label for="inputAmount">Amount: </Label>
+        <Field
+          id="inputAmount"
+          type="number"
+          min=".01"
+          step="0.01"
+          placeholder="enter amount in PLN*"
+          value={amount}
+          onChange={({ target }) => setAmount(target.value)}
+          required
+        />
+
+        <Label for="inputCurrency">Currency:</Label>
+        <Field
+          id="inputCurrency"
+          as="select"
+          name="Currency"
+          value={currency}
+          onChange={({ target }) => setCurrency(target.value)}
+        >
+          {currencies.map((currency) => (
+            <option key={currency.abbreviation} value={currency.abbreviation}>
+              {currency.name}
+            </option>
+          ))}
+        </Field>
       </Wrapper>
 
       <div>

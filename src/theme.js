@@ -11,7 +11,9 @@ export const theme = {
     Stack: "#7e807e",
     Tropaz: "#2661a5",
   },
+
   breakpoint: {
     mobile: 600,
+    mobileNarrow: 400,
   },
 };

@@ -6,14 +6,9 @@ export const FormField = styled.form`
   max-width: 600px;
   background-color: ${({ theme }) => theme.color.Negroni};
   padding: 15px;
-
-  @media (max-width<${({ theme }) => theme.breakpoint.mobile}px) {
-    width: 600px;
-  }
 `;
 
 export const Header = styled.h1`
-  /* max-width: 100vh; */
   text-align: center;
   font-size: large;
   color: ${({ theme }) => theme.color.white};
@@ -59,7 +54,7 @@ export const Field = styled.input`
   text-align: left;
   margin: 3px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileNarrow}px) {
     margin: 5px auto;
   }
 `;

@@ -2,7 +2,6 @@
 ## Converting PLN amounts into different 3 currencies (EUR, USD, GBP)
 ### Technologies used:
 - HTML, CSS, JavaScript (including "ECMAScript 6" features)
-- BEM
 - React
 - Styled Components
   

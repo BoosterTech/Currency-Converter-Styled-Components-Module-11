@@ -16,7 +16,7 @@ https://boostertech.github.io/currency-calculator-React/
 <p>
 
 
-![Screenshoo_of_app](public/Screenshot_Readme.png)
+![Screenshoo_of_app](images/Screenshot_Readme.png)
 
 ## Available Scripts
 

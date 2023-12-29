@@ -20,7 +20,8 @@ export const Header = styled.h1`
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileNarrow}px) {
     width: 80%;
-    font-size: 5vw;
+    font-size: medium;
+    padding:10px 10px;
   }
 `;
 

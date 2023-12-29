@@ -4,6 +4,7 @@
 - HTML, CSS, JavaScript (including "ECMAScript 6" features)
 - React
 - Styled Components
+- Fetch API
   
 ### Demo:
 https://boostertech.github.io/currency-calculator-React/
